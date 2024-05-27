@@ -1,0 +1,25 @@
+{
+  "name": "cbd-fe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.7.3",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.0",
+    "vue": "^3.4.21",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
