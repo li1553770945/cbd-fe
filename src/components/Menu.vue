@@ -92,6 +92,9 @@ const isActive = (item:MenuItem) => computed(
 .is-active {
     background-color: #00aeef;
 }
+.menu-item:hover {
+    background-color: #1ba000; /* 鼠标悬停时改变背景颜色 */
+}
 
 .submenu {
     display: none; /* 默认不显示子菜单 */
