@@ -3,6 +3,13 @@ import { useYearStore } from '@/stores/useYearStore';  // 确保路径正确
 
 const routes: Array<RouteRecordRaw> = [
     {
+        path: '/',
+        redirect: () => {
+            const currentYear = new Date().getFullYear();
+            return { path: `/${currentYear}/home` };
+        },
+    },
+    {
       path: '/:year/home',
       name: 'home',
       component: () => import('@/pages/Home.vue'),
@@ -49,6 +56,10 @@ const routes: Array<RouteRecordRaw> = [
       name: 'venueHotel',
       component: () => import('@/pages/VenueHotel.vue'),
       props: true
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        redirect: '/'
     }
   ];
   
