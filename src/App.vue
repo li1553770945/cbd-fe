@@ -29,4 +29,9 @@ import Head from './components/Head.vue';
   height: auto;
   background-color: #ffffff;
 }
+.main-container{
+  padding: 0;
+  height: auto;
+  background-color: #f0f0f0;
+}
 </style>

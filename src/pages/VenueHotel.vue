@@ -1,0 +1,3 @@
+<template>
+    Venue & Hotel
+</template>

@@ -1,0 +1,3 @@
+<template>
+    Committees
+</template>
