@@ -26,7 +26,7 @@ import Head from './components/Head.vue';
 }
 .header-container{
   padding: 0;
-  height: 10vh;
+  height: auto;
   background-color: #ffffff;
 }
 </style>
