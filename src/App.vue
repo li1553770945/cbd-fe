@@ -13,13 +13,12 @@
         <router-view></router-view>
       </el-main>
       <el-aside class="aside-container">
-        <h1 class="news">News</h1>
-        <h1 class="important-days">Important Days</h1>
+        <h2 class="news">News</h2>
+        <h2 class="important-days">Important Days</h2>
       </el-aside>
     </el-container>
-
-
-    <el-footer>
+    <el-footer class="footer">
+      Copyright {{ yearStore.currentYear }}
     </el-footer>
   </el-container>
 </template>
@@ -45,8 +44,8 @@ const routeName = computed(() => route.name);
   height: 100%;
   background-color: #f0f0f0;
   max-width: 1800px;
-  min-width: 1200px;
-  height: 100vh;
+  min-width: 600px;
+  min-height: 100vh;
 }
 
 .header-container {
@@ -56,7 +55,7 @@ const routeName = computed(() => route.name);
 }
 
 .main-container {
-  padding: 0;
+  padding-left: 5%;
   height: auto;
   background-color: #f0f0f0;
 }
@@ -67,6 +66,16 @@ const routeName = computed(() => route.name);
   text-align: left;
   padding-left: 2%;
   color: #005f98;
+  margin-bottom: 1%;
+}
+
+.footer{
+  display: flex; /* Flexbox 布局 */
+  text-align: center;
+  align-items: center;
+  justify-content: center; /* 水平居中 */
+  background-color: #005f98;
+  color: white;
 }
 
 </style>
