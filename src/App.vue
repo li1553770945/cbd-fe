@@ -8,7 +8,6 @@
       <el-image class="banner" :src="bannerUrl" v-if="routeName == 'home'" />
     </div>
     <el-container>
-      
       <el-main class="main-container">
         <router-view></router-view>
       </el-main>
@@ -56,9 +55,14 @@ const routeName = computed(() => route.name);
 }
 
 .main-container {
-  padding: 0;
   height: auto;
   background-color: #f0f0f0;
+  padding-left: 30px;
+  
+}
+::v-deep .main-container h1,
+::v-deep .main-container h2  {
+  color: #005f98; /* 设置默认的蓝色 */
 }
 .aside-container {
   padding: 10px;
