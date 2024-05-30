@@ -17,6 +17,7 @@ declare module 'vue' {
     ElRow: typeof import('element-plus/es')['ElRow']
     Head: typeof import('./src/components/Head.vue')['default']
     ImportantDays: typeof import('./src/components/ImportantDays.vue')['default']
+    MarkdownViewer: typeof import('./src/components/MarkdownViewer.vue')['default']
     Menu: typeof import('./src/components/Menu.vue')['default']
     News: typeof import('./src/components/News.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

@@ -13,7 +13,9 @@
       </el-main>
       <el-aside class="aside-container">
         <h2 class="news">News</h2>
+        <News />
         <h2 class="important-days">Important Days</h2>
+        <ImportantDays />
       </el-aside>
     </el-container>
     <el-footer class="footer">
@@ -24,6 +26,8 @@
 
 <script setup lang="ts">
 import Head from './components/Head.vue';
+import ImportantDays from './components/ImportantDays.vue';
+import News from './components/News.vue';
 
 import { computed } from 'vue';
 import { useYearStore } from '@/stores/useYearStore';
@@ -59,8 +63,8 @@ const routeName = computed(() => route.name);
   padding-left: 30px;
   
 }
-::v-deep .main-container h1,
-::v-deep .main-container h2  {
+:deep .main-container h1,
+:deep .main-container h2  {
   color: #005f98; /* 设置默认的蓝色 */
 }
 .aside-container {
