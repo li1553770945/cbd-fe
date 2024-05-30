@@ -4,11 +4,17 @@ import { resolve } from "path";
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Vue from '@vitejs/plugin-vue'
+import Markdown from 'vite-plugin-md'
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    Vue({
+      include: [/\.vue$/, /\.md$/], // <--
+    }),
+    Markdown(),
     AutoImport({
       resolvers: [ElementPlusResolver()],
     }),

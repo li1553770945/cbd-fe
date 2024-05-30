@@ -1,21 +1,17 @@
-<template>
-    <div class="demo-image">
-      <el-image class="banner" :src="bannerUrl"/>
-  </div>
-</template>
-
 <script setup>
-import { computed } from 'vue';
-import { useYearStore } from '@/stores/useYearStore';
-const yearStore = useYearStore();
-const bannerUrl = computed(() => {
-  return new URL(`../assets/${yearStore.currentYear}/images/banner.jpg`, import.meta.url).href;
-});
+import { ref, defineAsyncComponent, onMounted } from 'vue';
+import { useYearStore } from '../stores/useYearStore';
 
+const yearStore = useYearStore();
+const DynamicMarkdownComponent = ref(null);
+
+onMounted(() => {
+    DynamicMarkdownComponent.value = defineAsyncComponent(() =>
+        import(`../assets/${yearStore.currentYear}/pages/home.md`)
+    );
+});
 </script>
 
-<style scoped>
-.banner {
-  width: 100%;
-}
-</style>
+<template>
+  <component :is="DynamicMarkdownComponent"></component>
+</template>
