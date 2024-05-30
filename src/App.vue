@@ -5,7 +5,7 @@
       <Head />
     </el-header>
     <div class="demo-image">
-      <el-image class="banner" :src="bannerUrl" v-if="routeName == 'home'" />
+      <el-image class="banner" :src="bannerUrl" v-show="routeName == 'home'" />
     </div>
     <el-container>
       <el-main class="main-container">
@@ -14,7 +14,7 @@
       <el-aside class="aside-container">
         <h2 class="news">News</h2>
         <News />
-        <h2 class="important-days">Important Days</h2>
+       
         <ImportantDays />
       </el-aside>
     </el-container>
@@ -63,19 +63,16 @@ const routeName = computed(() => route.name);
   padding-left: 30px;
   
 }
-:deep .main-container h1,
-:deep .main-container h2  {
-  color: #005f98; /* 设置默认的蓝色 */
-}
+
 .aside-container {
   padding: 10px;
   background-color: #e4e5e6;
   width: 30%;
   text-align: left;
   padding-left: 2%;
-  color: #005f98;
   margin-bottom: 1%;
 }
+
 
 .footer{
   display: flex; /* Flexbox 布局 */

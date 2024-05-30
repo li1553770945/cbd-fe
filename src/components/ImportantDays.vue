@@ -1,9 +1,11 @@
 <template>
     <div class="important-days">
+        <h2 class="important-days">Important Days</h2>
         <ul>
         <li v-for="day in importantDays" :key="day.date">
-            <span>{{ day.date }}</span>
-            <span>{{ day.name }}</span>
+            <span calss="date">{{ day.date }}</span>
+            :
+            <span class="">{{ day.name }}</span>
         </li>
         </ul>
     </div>
@@ -30,5 +32,7 @@ watchEffect(async () => {
 });
 </script>
 <style scoped>
-
+h2{
+    color: #005f98;
+}
 </style>
