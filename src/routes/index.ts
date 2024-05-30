@@ -13,49 +13,41 @@ const routes: Array<RouteRecordRaw> = [
       path: '/:year/home',
       name: 'home',
       component: () => import('@/pages/Home.vue'),
-      props: true
     },
     {
       path: '/:year/call-for-papers',
       name: 'callForPapers',
       component: () => import('@/pages/CallForPapers.vue'),
-      props: true
     },
     {
       path: '/:year/camera-ready-submit',
       name: 'cameraReadySubmit',
       component: () => import('@/pages/CameraReadySubmit.vue'),
-      props: true
     },
     {
       path: '/:year/committees',
       name: 'committees',
       component: () => import('@/pages/Committees.vue'),
-      props: true
     },
     {
       path: '/:year/keynote1',
       name: 'keynote1',
       component: () => import('@/pages/Keynote1.vue'),
-      props: true
     },
     {
       path: '/:year/keynote2',
       name: 'keynote2',
       component: () => import('@/pages/Keynote2.vue'),
-      props: true
     },
     {
       path: '/:year/register',
       name: 'register',
       component: () => import('@/pages/Register.vue'),
-      props: true
     },
     {
       path: '/:year/venue-hotel',
       name: 'venueHotel',
       component: () => import('@/pages/VenueHotel.vue'),
-      props: true
     },
     {
         path: '/:pathMatch(.*)*',

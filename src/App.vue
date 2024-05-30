@@ -1,19 +1,43 @@
 <template>
   <el-container class="app-container">
     <el-header class="header-container">
+
       <Head />
     </el-header>
-    <el-main class="main-container">
-      <router-view></router-view>
-    </el-main>
-    <el-footer>
+    <div class="demo-image">
+      <el-image class="banner" :src="bannerUrl" v-if="routeName == 'home'" />
+    </div>
+    <el-container>
+      
+      <el-main class="main-container">
+        <router-view></router-view>
+      </el-main>
+      <el-aside class="aside-container">
+        <h1 class="news">News</h1>
+        <h1 class="important-days">Important Days</h1>
+      </el-aside>
+    </el-container>
 
+
+    <el-footer>
     </el-footer>
   </el-container>
 </template>
 
 <script setup lang="ts">
 import Head from './components/Head.vue';
+
+import { computed } from 'vue';
+import { useYearStore } from '@/stores/useYearStore';
+const yearStore = useYearStore();
+const bannerUrl = computed(() => {
+  return new URL(`./assets/${yearStore.currentYear}/images/banner.jpg`, import.meta.url).href;
+});
+
+
+import { useRoute } from 'vue-router';
+const route = useRoute();
+const routeName = computed(() => route.name);
 </script>
 
 <style scoped>
@@ -24,14 +48,25 @@ import Head from './components/Head.vue';
   min-width: 1200px;
   height: 100vh;
 }
-.header-container{
+
+.header-container {
   padding: 0;
   height: auto;
   background-color: #ffffff;
 }
-.main-container{
+
+.main-container {
   padding: 0;
   height: auto;
   background-color: #f0f0f0;
 }
+.aside-container {
+  padding: 10px;
+  background-color: #e4e5e6;
+  width: 30%;
+  text-align: left;
+  padding-left: 2%;
+  color: #005f98;
+}
+
 </style>
