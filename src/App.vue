@@ -19,7 +19,7 @@
       </el-aside>
     </el-container>
     <el-footer class="footer">
-      Copyright {{ yearStore.currentYear }}
+      Copyright &copy; {{ yearStore.currentYear }} International Conference on Advanced Cloud and Big Data
     </el-footer>
   </el-container>
 </template>
