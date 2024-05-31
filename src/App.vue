@@ -12,9 +12,9 @@
         <router-view></router-view>
       </el-main>
       <el-aside class="aside-container">
-        
+
         <News />
-       
+
         <ImportantDays />
       </el-aside>
     </el-container>
@@ -61,7 +61,7 @@ const routeName = computed(() => route.name);
   height: auto;
   background-color: #f0f0f0;
   padding-left: 30px;
-  
+
 }
 
 .aside-container {
@@ -74,13 +74,14 @@ const routeName = computed(() => route.name);
 }
 
 
-.footer{
-  display: flex; /* Flexbox 布局 */
+.footer {
+  display: flex;
+  /* Flexbox 布局 */
   text-align: center;
   align-items: center;
-  justify-content: center; /* 水平居中 */
+  justify-content: center;
+  /* 水平居中 */
   background-color: #005f98;
   color: white;
 }
-
 </style>

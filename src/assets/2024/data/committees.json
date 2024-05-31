@@ -1,18 +1,162 @@
-{
-    "organizers": [
-        {
-            "role": "Jesse",
-            "name": [
-                "Jesse",
-                "Jesse"
-            ]
-        }
-    ],
-    "tpc": [
-        {
-            "name": "Jesse",
-            "affiliation": "Jesse",
-            "country": "Jesse"
-        }
-    ]
-}
+[
+    {
+        "name": "Honourable Chairs",
+        "persons": [
+            {
+                "name": "Junzhou Luo",
+                "affiliation": "Southeast University",
+                "country": "China"
+            },
+            {
+                "name": "Fabrizio Carmignani",
+                "affiliation": "University of Southern Queensland",
+                "country": "Australia"
+            }
+        ]
+    },
+    {
+        "name": "General Chairs",
+        "persons": [
+            {
+                "name": "Jianming Yong",
+                "affiliation": "University of Southern Queensland",
+                "country": "Australia"
+            }
+        ]
+    },
+    {
+        "name": "Program Committee Chairs",
+        "persons": [
+            {
+                "name": "Hongzhi Yin",
+                "affiliation": "University of Queensland",
+                "country": "Australia"
+            },
+            {
+                "name": "Jun Shen",
+                "affiliation": "University of Wollongong",
+                "country": "Australia"
+            },
+            {
+                "name": "Jinghui Zhang",
+                "affiliation": "Southeast University",
+                "country": "China"
+            }
+        ]
+    },
+    {
+        "name": "Local Organising Chair",
+        "persons": [
+            {
+                "name": "Xiaohui Tao",
+                "affiliation": "University of Southern Queensland",
+                "country": "Australia"
+            }
+        ]
+    },
+    {
+        "name": "Industry Chair",
+        "persons": [
+            {
+                "name": "Xujuan Zhou",
+                "affiliation": "University of Southern Queensland",
+                "country": "Australia"
+            }
+        ]
+    },
+    {
+        "name": "Application Chair",
+        "persons": [
+            {
+                "name": "Jun Yan",
+                "affiliation": "University of Wollongong",
+                "country": "Australia"
+            }
+        ]
+    },
+    {
+        "name": "Sponsorship Chair",
+        "persons": [
+            {
+                "name": "Mahdi Fahmideh",
+                "affiliation": "University of Southern Queensland",
+                "country": "Australia"
+            }
+        ]
+    },
+    {
+        "name": "Publicity Chairs",
+        "persons": [
+            {
+                "name": "Taotao Cai",
+                "affiliation": "University of Southern Queensland",
+                "country": "Australia"
+            },
+            {
+                "name": "Guowei Yang",
+                "affiliation": "University of Queensland",
+                "country": "Australia"
+            },
+            {
+                "name": "Runqun Xiong",
+                "affiliation": "Southeast University",
+                "country": "China"
+            }
+        ]
+    },
+    {
+        "name": "Publication Chairs",
+        "persons": [
+            {
+                "name": "Di Wu",
+                "affiliation": "University of Southern Queensland",
+                "country": "Australia"
+            },
+            {
+                "name": "He Chen",
+                "affiliation": "Tsinghua University Press",
+                "country": "China"
+            },
+            {
+                "name": "Jiahui Jin",
+                "affiliation": "Southeast University",
+                "country": "China"
+            }
+        ]
+    },
+    {
+        "name": "International Steering Committee",
+        "persons": [
+            {
+                "name": "Junzhou Luo",
+                "affiliation": "Southeast University",
+                "country": "China"
+            },
+            {
+                "name": "Yi Pan",
+                "affiliation": "Georgia State University",
+                "country": "USA"
+            },
+            {
+                "name": "Laurence T. Yang",
+                "affiliation": "St. Francis Xavier University",
+                "country": "Canada"
+            }
+        ]
+    },
+    {
+        "name": "Technical Sponsors",
+        "persons": [
+            {
+                "name": "University of Southern Queensland",
+                "affiliation": "University",
+                "country": "Australia"
+            },
+            {
+                "name": "Southeast University",
+                "affiliation": "University",
+                "country": "China"
+            }
+        ]
+    }
+]

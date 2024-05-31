@@ -1,6 +1,18 @@
 [
     {
-        "date": "2024-06-30",
-        "name": "paper-submit"
+        "date": "July 15, 2024",
+        "name": "Paper submission deadline"
+    },
+    {
+        "date": "Aug 15, 2024",
+        "name": "Notification of acceptance"
+    },
+    {
+        "date": "Sep 10, 2024",
+        "name": "Camera ready due"
+    },
+    {
+        "date": "Sep 10, 2024",
+        "name": "Registration due"
     }
 ]
