@@ -12,7 +12,7 @@
         <router-view></router-view>
       </el-main>
       <el-aside class="aside-container">
-        <h2 class="news">News</h2>
+        
         <News />
        
         <ImportantDays />

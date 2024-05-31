@@ -61,7 +61,7 @@ const router = createRouter({
     routes
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _, next) => {
     const year = to.params.year as string;  // 使用 TypeScript 断言确保类型正确
     if (year && !isNaN(Number(year))) {
         const yearStore = useYearStore();

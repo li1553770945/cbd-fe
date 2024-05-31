@@ -1,6 +1,6 @@
 <template>
     <div class="menu">
-        <div v-for="item in menuItems" :key="item.name" :class="{'is-active':isActive(item).value}"class="menu-item">
+        <div v-for="item in menuItems" :key="item.name" :class="['menu-item', {'is-active': isActive(item).value}]">
             <router-link :to="item.path">
                 {{ item.name }}
             </router-link>
@@ -86,15 +86,22 @@ const isActive = (item:MenuItem) => computed(
     flex-grow: 1; /* 每个菜单项平分空间 */
     text-align: center; /* 文本居中显示 */
     padding: 10px 0; /* 适当的填充以增加点击区域 */
-    background-color: #005F98;
     border: 1px solid #ffffff; /* 添加一个深色的右边框 */
+    background: linear-gradient(white, #65C4FF);
+    color:#000000;
 }
-.is-active {
-    background-color: #00aeef;
+
+.menu-item.is-active {
+   background:#005f98;
+
 }
-.menu-item:hover {
-    background-color: #1ba000; /* 鼠标悬停时改变背景颜色 */
+.menu-item.is-active > a{
+   color:#ffffff;
+
 }
+/* .menu-item:hover {
+    background-color: #1ba000; /* 鼠标悬停时改变背景颜色 
+} */
 
 .submenu {
     display: none; /* 默认不显示子菜单 */
@@ -122,13 +129,13 @@ const isActive = (item:MenuItem) => computed(
 
 
 a {
-    color: #ffffff;
+    color:#005f98;
     text-decoration: none;
     width: 100%;
 }
 
 a:hover {
-    color: #ffffff;
+    color:#005f98;
 }
 
 
