@@ -1,20 +1,21 @@
 <template>
-    <div class="committee-container">
-        <h2>Committees</h2>
-        <el-table :data="CommiteeData" border style="width: 100%">
-            <el-table-column prop="name" label="Name" width="180" class="column-header">
-            </el-table-column>
-            <el-table-column label="Members" class="column-header">
-                <template #default="{ row }">
-                    <div v-for="person in row.persons" :key="person.name" class="member-entry">
-                        {{ person.name }},
-                        {{ person.affiliation }},
-                        {{ person.country }}
-                    </div>
-                </template>
-            </el-table-column>
-        </el-table>
-    </div>
+    <h2>Committees</h2>
+    <el-table :data="CommiteeData" style="width: 100%" stripe border class="comittee-table" :cell-style="{
+        borderColor: '#005f98',
+    }" :header-cell-style="{
+            borderColor: '#005f98',
+        }">
+        <el-table-column prop="role" label="Role" width="180">
+        </el-table-column>
+        <el-table-column label="Members">
+            <template #default="{ row }">
+                <div v-for="person in row.persons" :key="person.name" class="member-entry">
+                    {{ person.name }} <span v-if="person.affiliation != ''">- {{ person.affiliation }}, {{
+                        person.country }}</span>
+                </div>
+            </template>
+        </el-table-column>
+    </el-table>
 </template>
 
 <script setup lang="ts">
@@ -31,7 +32,7 @@ interface IPerson {
 }
 
 interface ICommittee {
-    name: string;
+    role: string;
     persons: IPerson[];
 }
 
@@ -50,34 +51,13 @@ watchEffect(async () => {
 </script>
 
 <style scoped>
-.committee-container {
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 h2 {
     color: #005f98;
     margin-bottom: 20px;
 }
-
-.column-header {
-    background-color: #e1f5fe;
-    color: #005f98;
-    font-weight: bold;
-    border-right: 4px solid #005f98;
-
+.comittee-table{
+    border: 1px solid #005f98;
+    border-radius: 10px;
 }
 
-.member-entry {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.member-entry div {
-    margin: 4px 0;
-}
 </style>

@@ -16,6 +16,8 @@
         <News />
 
         <ImportantDays />
+
+        <Contact/>
       </el-aside>
     </el-container>
     <el-footer class="footer">
@@ -27,6 +29,7 @@
 <script setup lang="ts">
 import Head from './components/Head.vue';
 import ImportantDays from './components/ImportantDays.vue';
+import Contact from './components/Contact.vue';
 import News from './components/News.vue';
 
 import { computed } from 'vue';

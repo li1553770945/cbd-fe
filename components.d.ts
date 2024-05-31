@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Contact: typeof import('./src/components/Contact.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElContainer: typeof import('element-plus/es')['ElContainer']
@@ -15,8 +16,6 @@ declare module 'vue' {
     ElImage: typeof import('element-plus/es')['ElImage']
     ElMain: typeof import('element-plus/es')['ElMain']
     ElRow: typeof import('element-plus/es')['ElRow']
-    ElTable: typeof import('element-plus/es')['ElTable']
-    ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
     Head: typeof import('./src/components/Head.vue')['default']
     ImportantDays: typeof import('./src/components/ImportantDays.vue')['default']
     MarkdownViewer: typeof import('./src/components/MarkdownViewer.vue')['default']

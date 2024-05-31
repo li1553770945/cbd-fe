@@ -1,6 +1,6 @@
 [
     {
-        "name": "Honourable Chairs",
+        "role": "Honourable Chairs",
         "persons": [
             {
                 "name": "Junzhou Luo",
@@ -15,7 +15,7 @@
         ]
     },
     {
-        "name": "General Chairs",
+        "role": "General Chairs",
         "persons": [
             {
                 "name": "Jianming Yong",
@@ -25,7 +25,7 @@
         ]
     },
     {
-        "name": "Program Committee Chairs",
+        "role": "Program Committee Chairs",
         "persons": [
             {
                 "name": "Hongzhi Yin",
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "name": "Local Organising Chair",
+        "role": "Local Organising Chair",
         "persons": [
             {
                 "name": "Xiaohui Tao",
@@ -55,7 +55,7 @@
         ]
     },
     {
-        "name": "Industry Chair",
+        "role": "Industry Chair",
         "persons": [
             {
                 "name": "Xujuan Zhou",
@@ -65,7 +65,7 @@
         ]
     },
     {
-        "name": "Application Chair",
+        "role": "Application Chair",
         "persons": [
             {
                 "name": "Jun Yan",
@@ -75,7 +75,7 @@
         ]
     },
     {
-        "name": "Sponsorship Chair",
+        "role": "Sponsorship Chair",
         "persons": [
             {
                 "name": "Mahdi Fahmideh",
@@ -85,7 +85,7 @@
         ]
     },
     {
-        "name": "Publicity Chairs",
+        "role": "Publicity Chairs",
         "persons": [
             {
                 "name": "Taotao Cai",
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "name": "Publication Chairs",
+        "role": "Publication Chairs",
         "persons": [
             {
                 "name": "Di Wu",
@@ -125,7 +125,7 @@
         ]
     },
     {
-        "name": "International Steering Committee",
+        "role": "International Steering Committee",
         "persons": [
             {
                 "name": "Junzhou Luo",
@@ -145,17 +145,17 @@
         ]
     },
     {
-        "name": "Technical Sponsors",
+        "role": "Technical Sponsors",
         "persons": [
             {
                 "name": "University of Southern Queensland",
-                "affiliation": "University",
-                "country": "Australia"
+                "affiliation": "",
+                "country": ""
             },
             {
                 "name": "Southeast University",
-                "affiliation": "University",
-                "country": "China"
+                "affiliation": "",
+                "country": ""
             }
         ]
     }
