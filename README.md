@@ -1,9 +1,19 @@
-# Vue 3 + TypeScript + Vite
+# CBD会议 前端
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
++ src:源码
++ assets:存储的主要数据等，理论上每年更新这里面的东西就可以,fonts存储的字体，images存储的图片，这两个是每年通用的，然后新建一个当年的文件夹，里面的内容为：
 
-## Recommended Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+```
+|-data
+   |- committes.json:组委会
+   |- head.json:标题和副标题
+   |- important-days.json:重要日期
+   |- news.json: 新闻
+|-images
+   |- banner.jpg:主页的大图
+|-pages:存储的页面
+   |- call-for-papers.md:
+   |- camera-ready-submit.md:
+   |- home.md
+   |- venue-hotel.md
+```
