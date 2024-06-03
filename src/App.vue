@@ -4,7 +4,7 @@
 
       <Head />
     </el-header>
-    <Banner />
+    <Banner v-show="routeName == 'home'" />
     <el-container>
       <el-main class="main-container">
         <router-view></router-view>
@@ -15,7 +15,6 @@
 
         <ImportantDays />
 
-        <Contact/>
       </el-aside>
     </el-container>
     <el-footer class="footer">
@@ -25,16 +24,18 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
 import Head from './components/Head.vue';
 import ImportantDays from './components/ImportantDays.vue';
-import Contact from './components/Contact.vue';
 import News from './components/News.vue';
 import Banner from './components/Banner.vue';
 
 import { useYearStore } from '@/stores/useYearStore';
 const yearStore = useYearStore();
 
-
+import { useRoute } from 'vue-router';
+const route = useRoute();
+const routeName = computed(() => route.name);
 </script>
 
 <style scoped>

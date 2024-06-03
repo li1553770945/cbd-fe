@@ -30,14 +30,14 @@ const routes: Array<RouteRecordRaw> = [
       component: () => import('@/pages/Committees.vue'),
     },
     {
-      path: '/:year/keynote1',
-      name: 'keynote1',
-      component: () => import('@/pages/Keynote1.vue'),
+      path: '/:year/keynotes',
+      name: 'keynotes',
+      component: () => import('@/pages/Keynotes.vue'),
     },
     {
-      path: '/:year/keynote2',
-      name: 'keynote2',
-      component: () => import('@/pages/Keynote2.vue'),
+      path: '/:year/program-at-a-glance',
+      name: 'programAtAGlance',
+      component: () => import('@/pages/ProgramAtAGlance.vue'),
     },
     {
       path: '/:year/register',

@@ -3,6 +3,9 @@
         <el-col :span="4" class="seulogo-container">
             <el-image :src="seuSrc" fit="scale-down" class="seulogo"></el-image>
         </el-col>
+        <el-col :span="5"  class="usqlogo-container">
+            <el-image :src="usqSrc" fit="scale-down" class="usqlogo"></el-image>
+        </el-col>
         <el-col :span="12">
             <el-row class="title">
                 {{ headData?.title }}
@@ -12,10 +15,10 @@
                 {{ headData?.subtitle }}
             </el-row>
         </el-col>
-
-        <el-col :span="8">
+        <el-col :span="3">
             <div class="grid-content ep-bg-purple-light" />
         </el-col>
+    
     </el-row>
     <el-row class="menu-row">
         <Menu class="menu"></Menu>
@@ -35,6 +38,7 @@ const headData = ref<IHead | null>(null);
 const yearStore = useYearStore();
 
 const seuSrc = new URL('@/assets/images/seu.png', import.meta.url).href;
+const usqSrc = new URL('@/assets/images/usq.svg', import.meta.url).href;
 
 
 watchEffect(async () => {
@@ -76,5 +80,18 @@ watchEffect(async () => {
 }
 .seulogo{
     width: 50%;
+}
+
+.usqlogo-container {
+   
+   display: flex;
+   justify-content: left;
+   align-items: center;
+}
+.usqlogo{
+   height:80%;
+}
+.menu-row{
+    margin-top: 20px;
 }
 </style>
