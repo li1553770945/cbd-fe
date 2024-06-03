@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineAsyncComponent, onMounted, defineProps } from 'vue';
+import { ref, defineAsyncComponent, onMounted} from 'vue';
 import { useYearStore } from '../stores/useYearStore';
 
 const yearStore = useYearStore();

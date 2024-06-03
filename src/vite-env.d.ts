@@ -10,3 +10,8 @@ declare module '*.vue' {
     const Component: ComponentOptions
     export default Component
   }
+
+  interface ImportMeta {
+    glob: (pattern: string) => Record<string, () => Promise<{ [key: string]: any }>>;
+    globEager: (pattern: string) => Record<string, { [key: string]: any }>;
+  }

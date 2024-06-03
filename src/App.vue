@@ -4,9 +4,7 @@
 
       <Head />
     </el-header>
-    <div class="demo-image">
-      <el-image class="banner" :src="bannerUrl" v-show="routeName == 'home'" />
-    </div>
+    <Banner />
     <el-container>
       <el-main class="main-container">
         <router-view></router-view>
@@ -31,18 +29,12 @@ import Head from './components/Head.vue';
 import ImportantDays from './components/ImportantDays.vue';
 import Contact from './components/Contact.vue';
 import News from './components/News.vue';
+import Banner from './components/Banner.vue';
 
-import { computed } from 'vue';
 import { useYearStore } from '@/stores/useYearStore';
 const yearStore = useYearStore();
-const bannerUrl = computed(() => {
-  return new URL(`./assets/${yearStore.currentYear}/images/banner.jpg`, import.meta.url).href;
-});
 
 
-import { useRoute } from 'vue-router';
-const route = useRoute();
-const routeName = computed(() => route.name);
 </script>
 
 <style scoped>
