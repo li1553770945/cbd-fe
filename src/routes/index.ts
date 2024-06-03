@@ -17,7 +17,7 @@ const routes: Array<RouteRecordRaw> = [
     {
       path: '/:year/call-for-papers',
       name: 'callForPapers',
-      component: () => import('@/pages/CallForPapers.vue'),
+      component: () => import('@/pages/DynamicCallForPapers.vue'),
     },
     {
       path: '/:year/camera-ready-submit',
@@ -48,6 +48,11 @@ const routes: Array<RouteRecordRaw> = [
       path: '/:year/venue-hotel',
       name: 'venueHotel',
       component: () => import('@/pages/VenueHotel.vue'),
+    },
+    {
+      path: '/:year/visa',
+      name: 'visa',
+      component: () => import('@/pages/Visa.vue'),
     },
     {
         path: '/:pathMatch(.*)*',

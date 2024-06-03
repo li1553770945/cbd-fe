@@ -16,22 +16,17 @@ const yearStore = useYearStore();
 const images = ref<string[]>([]);
 
 watchEffect(() => {
-    if (yearStore.currentYear) {
-        console.log('Current Year:', yearStore.currentYear);
-        try {
-            images.value = [];
-            for (let i = 1; i <= 5; i++) {
-                const imagePath = new URL(`../assets/${yearStore.currentYear}/images/banner/${i}.jpg`, import.meta.url).href;
-                console.log('Image Path:', imagePath);
-                images.value.push(imagePath);
-            }
-        } catch (error) {
-            console.error('Failed to load banner:', error);
-        }
+  if (yearStore.currentYear) {
+    try {
+      images.value = [];
+      for (let i = 1; i <= 5; i++) {
+        const imagePath = new URL(`../assets/${yearStore.currentYear}/images/banner/${i}.jpg`, import.meta.url).href;
+        images.value.push(imagePath);
+      }
+    } catch (error) {
+      console.error('Failed to load banner:', error);
     }
+  }
 });
 
 </script>
-
-
-

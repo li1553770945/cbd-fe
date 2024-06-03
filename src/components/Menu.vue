@@ -61,8 +61,18 @@ const menuItems: MenuItem[] = [
         name: 'Register',
     },
     {
-        path: 'venue-hotel',
-        name: 'Venue & Hotel',
+        name:'Useful Information',
+        path:'',
+        children:[
+            {
+                name:'Venue & Hotel',
+                path:'venue-hotel'
+            },
+            {
+                name:'Visa',
+                path:'visa'
+            }
+        ]
     },
 ];
 
