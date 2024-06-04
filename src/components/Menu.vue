@@ -71,13 +71,14 @@ const menuItems: MenuItem[] = [
         name: 'Register',
     },
     {
+        name: 'Venue & Hotel',
+        path: 'venue-hotel'
+    },
+    {
         name: 'Useful Information',
         path: '',
         children: [
-            {
-                name: 'Venue & Hotel',
-                path: 'venue-hotel'
-            },
+
             {
                 name: 'Visa',
                 path: 'visa'
@@ -102,6 +103,7 @@ const isActive = (item: MenuItem) => computed(
     display: flex;
     justify-content: space-between;
     width: 100%;
+    font-size: 0.85em;
 }
 
 .menu-item {

@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
   background-color: gray;
   font-family: 'Cabin', sans-serif;
+  hyphens:auto;
 }
 
 h1 {

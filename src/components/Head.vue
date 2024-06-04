@@ -6,6 +6,7 @@
         <el-col :span="5"  class="usqlogo-container">
             <el-image :src="usqSrc" fit="scale-down" class="usqlogo"></el-image>
         </el-col> -->
+        <el-col :span="4"></el-col>
         <el-col :span="12">
             <el-row class="title">
                 {{ headData?.title }}
