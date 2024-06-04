@@ -72,8 +72,8 @@
 
     <h2>Sponsor </h2>
     <div class="logo-container">
-        <el-image :src="seuSrc" fit="scale-down" class="seulogo"></el-image>
         <el-image :src="usqSrc" fit="scale-down" class="usqlogo"></el-image>
+        <el-image :src="seuSrc" fit="scale-down" class="seulogo"></el-image>
     </div>
 </template>
 

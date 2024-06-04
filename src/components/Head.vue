@@ -1,11 +1,6 @@
 <template>
-    <el-row class="head">
-        <!-- <el-col :span="4" class="seulogo-container">
-            <el-image :src="seuSrc" fit="scale-down" class="seulogo"></el-image>
-        </el-col>
-        <el-col :span="5"  class="usqlogo-container">
-            <el-image :src="usqSrc" fit="scale-down" class="usqlogo"></el-image>
-        </el-col> -->
+    <!-- <el-row class="head">
+        
         <el-col :span="4"></el-col>
         <el-col :span="12">
             <el-row class="title">
@@ -20,7 +15,7 @@
             <div class="grid-content ep-bg-purple-light" />
         </el-col>
     
-    </el-row>
+    </el-row> -->
     <el-row class="menu-row">
         <Menu class="menu"></Menu>
     </el-row>
@@ -72,6 +67,7 @@ watchEffect(async () => {
 
 .menu {
     width: 100%;
+    height:4em;
 }
 .seulogo-container {
    
@@ -93,6 +89,5 @@ watchEffect(async () => {
    height:80%;
 }
 .menu-row{
-    margin-top: 20px;
 }
 </style>

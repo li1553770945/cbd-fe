@@ -3,11 +3,11 @@
   </template>
   
   <script setup lang="ts">
-  import { ref, defineAsyncComponent, watchEffect } from 'vue';
+  import { defineAsyncComponent, watchEffect,shallowRef } from 'vue';
   import { useYearStore } from '../stores/useYearStore';
   
   const yearStore = useYearStore();
-  const callForPaperComponent = ref(null);
+  const callForPaperComponent = shallowRef(null);
   
   watchEffect(() => {
     if (yearStore.currentYear) {

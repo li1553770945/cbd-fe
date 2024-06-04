@@ -19,9 +19,9 @@ const routes: Array<RouteRecordRaw> = [
       component: () => import('@/pages/DynamicCallForPapers.vue'),
     },
     {
-      path: '/:year/camera-ready-submit',
-      name: 'cameraReadySubmit',
-      component: () => import('@/pages/CameraReadySubmit.vue'),
+      path: '/:year/final-paper-submission',
+      name: 'finalPaperSubmission.vue',
+      component: () => import('@/pages/FinalPaperSubmission.vue'),
     },
     {
       path: '/:year/organizing-committee',

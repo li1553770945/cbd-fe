@@ -33,9 +33,9 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
     { path: 'home', name: 'Home' },
     {
-        path: '', name: 'Submission', children: [
+        path: '', name: 'Authors', children: [
             { path: 'call-for-papers', name: 'Call for Papers' },
-            { path: 'camera-ready-submit', name: 'Camera Ready Submit' }
+            { path: 'final-paper-submission', name: 'Final Paper Submission' }
         ]
     },
     {
@@ -68,7 +68,7 @@ const menuItems: MenuItem[] = [
     },
     {
         path: 'register',
-        name: 'Register',
+        name: 'Registration',
     },
     {
         name: 'Venue & Hotel',
