@@ -19,15 +19,15 @@
     significance, relevance, and clarity of presentation. Accepted papers will be all published by Conference Publishing
     Services (CPS) and will be submitted for indexing to EI (Compendex). Authors of selected papers will be invited to
     submit revised and expanded version of their papers to be considered for publication in special issues of well-known
-    international journals such as *Tsinghua Science and Technology(SCI), Big Data Mining and Analytics(IEEE), Web
-    Intelligence*etc.
+    international journals such as Tsinghua Science and Technology(SCI), Big Data Mining and Analytics(IEEE), Web
+    Intelligence etc.
 
     <h2>Scope of Conference</h2>
     <p>The International Conference on Advanced Cloud and Big Data (CBD) provides a forum for both academics and
         practitioners working on cloud computing and big data technologies to explore new ideas, share their experiences
         and leverage each other's perspectives. Besides the latest research achievements, this conference also covers
         cloud/big data industry practices and their broad applications, and gives all participants a chance to identify
-        the new/emerging “hot” trends in these areas. We solicit original papers on a wide range of cloud computing and
+        the new/emerging "hot" trends in these areas. We solicit original papers on a wide range of cloud computing and
         big data topics that can be divided into three tracks but are not limited to:</p>
 
     <table style="margin-left: auto; margin-right: auto;">

@@ -67,7 +67,7 @@ const menuItems: MenuItem[] = [
         ]
     },
     {
-        path: 'register',
+        path: 'registration',
         name: 'Registration',
     },
     {

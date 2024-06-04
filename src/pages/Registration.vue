@@ -1,5 +1,5 @@
 <template>
-    <h2>Register</h2>
+    <h2>Registration</h2>
     under construction......
 
 </template>

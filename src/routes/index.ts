@@ -44,9 +44,9 @@ const routes: Array<RouteRecordRaw> = [
       component: () => import('@/pages/ProgramAtAGlance.vue'),
     },
     {
-      path: '/:year/register',
-      name: 'register',
-      component: () => import('@/pages/Register.vue'),
+      path: '/:year/registration',
+      name: 'registration',
+      component: () => import('@/pages/Registration.vue'),
     },
     {
       path: '/:year/venue-hotel',
