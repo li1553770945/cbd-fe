@@ -70,6 +70,11 @@
         </tr>
     </table>
 
+    <h2>Sponsor </h2>
+    <div class="logo-container">
+        <el-image :src="seuSrc" fit="scale-down" class="seulogo"></el-image>
+        <el-image :src="usqSrc" fit="scale-down" class="usqlogo"></el-image>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -78,7 +83,8 @@ import { useYearStore } from '@/stores/useYearStore';
 
 const yearStore = useYearStore();
 const cfpUrl = ref<string>('');
-
+const seuSrc = new URL('@/assets/images/seu.png', import.meta.url).href;
+const usqSrc = new URL('@/assets/images/usq.svg', import.meta.url).href;
 watchEffect(() => {
     if (yearStore.currentYear) {
         try {
@@ -128,4 +134,20 @@ li {
     width: 40%;
     height: 3em;
 }
+
+.logo-container {
+    display: flex;
+    align-items: left; 
+    height:10em;
+}
+
+/* .seulogo,
+.usqlogo {
+    height:10em;
+} */
+
+
+
+
+
 </style>
