@@ -1,6 +1,6 @@
 <template>
     <h2>Keynotes</h2>
-    under construction......
+    to be announced
 
 </template>
 

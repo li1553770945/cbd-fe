@@ -7,7 +7,11 @@
     <Banner v-show="routeName == 'home'" />
     <el-container>
       <el-main class="main-container">
-        <router-view></router-view>
+        <router-view v-slot="{ Component }">
+          <transition name="fade">
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </el-main>
       <el-aside class="aside-container">
 
@@ -24,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, onMounted } from 'vue';
 import Head from './components/Head.vue';
 import ImportantDays from './components/ImportantDays.vue';
 import News from './components/News.vue';
@@ -35,6 +39,21 @@ const yearStore = useYearStore();
 import { useRoute } from 'vue-router';
 const route = useRoute();
 const routeName = computed(() => route.name);
+
+onMounted(() => {
+console.log(`%c
+_____                     _____ _                     
+|  __ \\                   / ____| |                    
+| |__) |__  __ _  ___ ___| (___ | |__   ___  ___ _ __  
+|  ___/ _ \\/ _\` |/ __/ _ \\\\___ \\| '_ \\ / _ \\/ _ \\ '_ \\ 
+| |  |  __/ (_| | (_|  __/____) | | | |  __/  __/ |_) |
+|_|   \\___|\\__,_|\\___\\___|_____/|_| |_|\\___|\\___| .__/ 
+                                                | |    
+                                                |_|     `,"font-family:MonoSpace")                                  
+                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                       
+  console.log('website made by peacesheep,https://peacesheep.xyz');
+});
 </script>
 
 <style scoped>

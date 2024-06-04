@@ -1,12 +1,7 @@
 [
     {
-        "role": "Honourable Chairs",
+        "role": "Honorable Chair",
         "persons": [
-            {
-                "name": "Junzhou Luo",
-                "affiliation": "Southeast University",
-                "country": "China"
-            },
             {
                 "name": "Fabrizio Carmignani",
                 "affiliation": "University of Southern Queensland",
@@ -21,6 +16,11 @@
                 "name": "Jianming Yong",
                 "affiliation": "University of Southern Queensland",
                 "country": "Australia"
+            },
+            {
+                "name": "Junzhou Luo",
+                "affiliation": "Southeast University",
+                "country": "China"
             }
         ]
     },

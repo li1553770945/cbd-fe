@@ -1,6 +1,7 @@
 <template>
     <div v-if="committeeData.length == 0">
-        under construction......
+        <h2>Technical Program Committee</h2>
+        to be announced
     </div>
 
     <div v-for="item in committeeData">
