@@ -1,6 +1,6 @@
 <template>
   <div class="block text-center">
-    <div style="position: relative; width: 100%; height: 35vh;">
+    <div style="position: relative; width: 100%; height: 45vh;">
       <img :src="imageSrc" alt="Carousel image" style="object-fit: cover; width: 100%; height: 100%;">
       <!-- 文字容器 -->
       <div class="title-container">
@@ -72,6 +72,7 @@ watchEffect(async () => {
   margin-bottom: 10px;
   /* 添加间距 */
   font-weight: 700;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* 添加黑色的阴影，增加可读性 */
 }
 
 .sub-title {
@@ -80,5 +81,6 @@ watchEffect(async () => {
   /* color: #ccc; */
   /* 浅色文字 */
   font-weight: 600;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* 添加黑色的阴影，增加可读性 */
 }
 </style>
