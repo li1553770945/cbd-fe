@@ -29,7 +29,6 @@ import Head from './components/Head.vue';
 import ImportantDays from './components/ImportantDays.vue';
 import News from './components/News.vue';
 import Banner from './components/Banner.vue';
-
 import { useYearStore } from '@/stores/useYearStore';
 const yearStore = useYearStore();
 

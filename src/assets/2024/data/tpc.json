@@ -1,0 +1,22 @@
+[
+    {
+        "role": "Program Committee Chairs",
+        "persons": [
+            {
+                "name": "Hongzhi Yin",
+                "affiliation": "University of Queensland",
+                "country": "Australia"
+            },
+            {
+                "name": "Jun Shen",
+                "affiliation": "University of Wollongong",
+                "country": "Australia"
+            },
+            {
+                "name": "Jinghui Zhang",
+                "affiliation": "Southeast University",
+                "country": "China"
+            }
+        ]
+    }
+]

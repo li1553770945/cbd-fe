@@ -1,6 +1,6 @@
 <template>
-    <h2>Committees</h2>
-    <div v-for="item in CommiteeData">
+    <h2>Organization Committee</h2>
+    <div v-for="item in oc">
         <h3> {{ item.role }}</h3>
         <ul>
             <li v-for="person in item.persons" :key="person.name">
@@ -8,14 +8,16 @@
                 <span v-if="person.affiliation != ''">- {{ person.affiliation }}, {{ person.country }}</span>
             </li>
         </ul>
-        <!-- <el-table-column label="Members">
-            <template #default="{ row }">
-                <div v-for="person in row.persons" :key="person.name" class="member-entry">
-                    {{ person.name }} <span v-if="person.affiliation != ''">- {{ person.affiliation }}, {{
-                        person.country }}</span>
-                </div>
-            </template>
-</el-table-column> -->
+    </div>
+    <h2>Technical Program Committee</h2>
+    <div v-for="item in tpc">
+        <h3> {{ item.role }}</h3>
+        <ul>
+            <li v-for="person in item.persons" :key="person.name">
+                <span>{{ person.name }}</span>
+                <span v-if="person.affiliation != ''">- {{ person.affiliation }}, {{ person.country }}</span>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -36,13 +38,17 @@ interface ICommittee {
     persons: IPerson[];
 }
 
-const CommiteeData = ref<ICommittee[]>([]);
-
+const oc = ref<ICommittee[]>([]);
+const tpc = ref<ICommittee[]>([]);
 watchEffect(async () => {
     if (yearStore.currentYear) {
         try {
-            const data = await import(`../assets/${yearStore.currentYear}/data/committees.json`);
-            CommiteeData.value = data.default as ICommittee[];
+            const ocData = await import(`../assets/${yearStore.currentYear}/data/oc.json`);
+            oc.value = ocData.default as ICommittee[];
+
+            const tpcData = await import(`../assets/${yearStore.currentYear}/data/tpc.json`);
+            tpc.value = tpcData.default as ICommittee[];
+
         } catch (error) {
             console.error('Failed to load committees.json:', error);
         }

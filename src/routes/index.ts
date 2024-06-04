@@ -5,8 +5,7 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
         redirect: () => {
-            const currentYear = new Date().getFullYear();
-            return { path: `/${currentYear}/home` };
+            return { path: `/2024/home` };
         },
     },
     {
