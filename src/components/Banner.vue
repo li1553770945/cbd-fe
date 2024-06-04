@@ -79,6 +79,6 @@ watchEffect(async () => {
   /* 较小字体 */
   /* color: #ccc; */
   /* 浅色文字 */
-  font-weight: 500;
+  font-weight: 600;
 }
 </style>

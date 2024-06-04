@@ -1,7 +1,6 @@
 ## Conference Address
 **Brisbane Square Library**  
 266 George St, Brisbane, QLD 4000  
-Many economic and luxury hotels are available around the conference location.
 
 ## Suggested Booking Websites
 - <a href="https://www.booking.com" target="_blank">Booking.com</a>
