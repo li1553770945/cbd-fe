@@ -39,8 +39,18 @@ const menuItems: MenuItem[] = [
         ]
     },
     {
-        path: 'committees',
+        path: '',
         name: 'Committees',
+        children: [
+            {
+                name: 'Organizing Committee',
+                path: 'organizing-committee',
+            },
+            {
+                name: 'Technical Program Committee',
+                path: 'technical-program-committee',
+            }
+        ]
     },
     {
         'name': 'Program',
@@ -61,16 +71,16 @@ const menuItems: MenuItem[] = [
         name: 'Register',
     },
     {
-        name:'Useful Information',
-        path:'',
-        children:[
+        name: 'Useful Information',
+        path: '',
+        children: [
             {
-                name:'Venue & Hotel',
-                path:'venue-hotel'
+                name: 'Venue & Hotel',
+                path: 'venue-hotel'
             },
             {
-                name:'Visa',
-                path:'visa'
+                name: 'Visa',
+                path: 'visa'
             }
         ]
     },
@@ -111,7 +121,7 @@ const isActive = (item: MenuItem) => computed(
     background: #005f98;
 }
 
-.menu-item.is-active > a {
+.menu-item.is-active>a {
     color: #ffffff;
 }
 

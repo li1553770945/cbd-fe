@@ -1,4 +1,8 @@
 <template>
+    <div v-if="committeeData.length == 0">
+        under construction......
+    </div>
+
     <div v-for="item in committeeData">
         <h2> {{ item.role }}</h2>
         <ul>
@@ -31,7 +35,7 @@ const committeeData = ref<ICommittee[]>([]);
 watchEffect(async () => {
     if (yearStore.currentYear) {
         try {
-            const data = await import(`../assets/${yearStore.currentYear}/data/oc.json`);
+            const data = await import(`../assets/${yearStore.currentYear}/data/tpc.json`);
             committeeData.value = data.default as ICommittee[];
         } catch (error) {
             console.error('Failed to load committees.json:', error);

@@ -24,9 +24,14 @@ const routes: Array<RouteRecordRaw> = [
       component: () => import('@/pages/CameraReadySubmit.vue'),
     },
     {
-      path: '/:year/committees',
-      name: 'committees',
+      path: '/:year/organizing-committee',
+      name: 'organizingCommittee',
       component: () => import('@/pages/Committees.vue'),
+    },
+    {
+      path: '/:year/technical-program-committee',
+      name: 'technicalProgramCommittee',
+      component: () => import('@/pages/TPC.vue'),
     },
     {
       path: '/:year/keynotes',

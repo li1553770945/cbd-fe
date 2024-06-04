@@ -1,5 +1,5 @@
 <template>
-    <h2>Keynote1</h2>
+    <h2>Keynotes</h2>
     under construction......
 
 </template>

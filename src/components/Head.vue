@@ -56,14 +56,14 @@ watchEffect(async () => {
 
 <style scoped>
 .title {
-    font-family: Raleway;
+    font-family: Cabin;
     font-weight: 700;
     font-size: 1.5em;
     padding-top: 1em;
 }
 
 .subtitle {
-    font-family: Raleway;
+    font-family: Cabin;
     font-weight: 500;
     font-size: 1.1em;
 
