@@ -12,7 +12,7 @@
             <!-- 子菜单项 -->
             <div v-if="item.children && item.children.length" class="submenu">
                 <div v-for="subItem in item.children" :key="subItem.name" class="menu-item">
-                    <router-link :to="subItem.path">{{ subItem.name.toUpperCase() }}</router-link>
+                    <router-link :to="subItem.path">{{ subItem.name }}</router-link>
                 </div>
             </div>
         </div>

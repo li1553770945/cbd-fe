@@ -1,21 +1,17 @@
 <template>
   <div class="block text-center">
-    <el-carousel height="40vh" motion-blur>
-      <el-carousel-item v-for="(src, _) in images" :key="src">
-        <div style="position: relative; width: 100%; height: 100%;">
-          <img :src="src" alt="Carousel image" style="object-fit: cover; width: 100%; height: 100%;">
-          <!-- 文字容器 -->
-          <div class="title-container">
-            <h2 class="title">
-              {{ headData?.title }}
-            </h2>
-            <h3 class="sub-title">
-              {{ headData?.subtitle }}
-            </h3>
-          </div>
-        </div>
-      </el-carousel-item>
-    </el-carousel>
+    <div style="position: relative; width: 100%; height: 35vh;">
+      <img :src="imageSrc" alt="Carousel image" style="object-fit: cover; width: 100%; height: 100%;">
+      <!-- 文字容器 -->
+      <div class="title-container">
+        <h2 class="title">
+          {{ headData?.title }}
+        </h2>
+        <h3 class="sub-title">
+          {{ headData?.subtitle }}
+        </h3>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,16 +20,15 @@ import { ref, watchEffect } from 'vue';
 import { useYearStore } from '@/stores/useYearStore';
 
 const yearStore = useYearStore();
-const images = ref<string[]>([]);
+const imageSrc = ref<string>();
 
 watchEffect(() => {
   if (yearStore.currentYear) {
     try {
-      images.value = [];
-      for (let i = 1; i <= 5; i++) {
-        const imagePath = new URL(`../assets/${yearStore.currentYear}/images/banner/${i}.jpg`, import.meta.url).href;
-        images.value.push(imagePath);
-      }
+
+      const imagePath = new URL(`../assets/${yearStore.currentYear}/images/banner.jpg`, import.meta.url).href;
+      imageSrc.value = imagePath;
+
     } catch (error) {
       console.error('Failed to load banner:', error);
     }
@@ -65,17 +60,25 @@ watchEffect(async () => {
   bottom: 50%;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   color: white;
-  padding: 20px;
-  text-align: center; /* 文本居中 */
+  text-align: center;
+  /* 文本居中 */
 }
+
 .title {
-  font-size: 28px; /* 大号字体 */
-  margin-bottom: 10px; /* 添加间距 */
+  font-size: 29px;
+  /* 大号字体 */
+  margin-bottom: 10px;
+  /* 添加间距 */
+  font-weight: 700;
 }
+
 .sub-title {
-  font-size: 20px; /* 较小字体 */
-  color: #ccc; /* 浅色文字 */
+  font-size: 24px;
+  /* 较小字体 */
+  /* color: #ccc; */
+  /* 浅色文字 */
+  font-weight: 500;
 }
 </style>
