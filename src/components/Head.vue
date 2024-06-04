@@ -22,31 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue';
-import { useYearStore } from '../stores/useYearStore';
 
-interface IHead {
-    title: string;
-    subtitle: string;
-}
-
-const headData = ref<IHead | null>(null);
-const yearStore = useYearStore();
-
-// const seuSrc = new URL('@/assets/images/seu.png', import.meta.url).href;
-// const usqSrc = new URL('@/assets/images/usq.svg', import.meta.url).href;
-
-
-watchEffect(async () => {
-    if (yearStore.currentYear) {
-        try {
-            const data = await import(`@/assets/${yearStore.currentYear}/data/head.json`);
-            headData.value = data.default as IHead;
-        } catch (error) {
-            console.error('Failed to load head data:', error);
-        }
-    }
-});
 </script>
 
 

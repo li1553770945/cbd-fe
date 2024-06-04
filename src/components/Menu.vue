@@ -2,7 +2,7 @@
     <div class="menu">
         <div v-for="item in menuItems" :key="item.name" :class="['menu-item', { 'is-active': isActive(item).value }]">
             <router-link :to="item.path" class="menu-link">
-                <span>{{ item.name }}</span>
+                <span>{{ item.name.toUpperCase() }}</span>
                 <div v-if="item.children && item.children.length" class="icon-container">
                     <el-icon>
                         <img class="down-arrow" :src="DownArrow" />
@@ -12,7 +12,7 @@
             <!-- 子菜单项 -->
             <div v-if="item.children && item.children.length" class="submenu">
                 <div v-for="subItem in item.children" :key="subItem.name" class="menu-item">
-                    <router-link :to="subItem.path">{{ subItem.name }}</router-link>
+                    <router-link :to="subItem.path">{{ subItem.name.toUpperCase() }}</router-link>
                 </div>
             </div>
         </div>
