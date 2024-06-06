@@ -41,14 +41,3 @@
     </tr>
 </table>
 
-<h2>Contact Us</h2>
-
-**Jinghui Zhang, Southeast University**
-
-
-<a href="mailto:jhzhang@seu.edu.cn">jhzhang@seu.edu.cn</a>
-
-**Di Wu, University of Southern Queensland**
-
-<a href="mailto:Di.Wu@unisq.edu.au">Di.Wu@unisq.edu.au</a>
-  

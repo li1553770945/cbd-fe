@@ -1,6 +1,6 @@
 <template>
     <div class="important-days">
-        <h2 class="important-days">Important Days</h2>
+        <h2 class="important-days">Important Dates</h2>
         <ul>
         <li v-for="day in importantDays" :key="day.date">
             <span class="date">{{ day.date }}: </span>
