@@ -70,11 +70,16 @@
         </tr>
     </table>
 
-    <h2>Sponsor </h2>
-    <div class="logo-container">
-        <el-image :src="usqSrc" fit="scale-down" class="usqlogo"></el-image>
-        <el-image :src="seuSrc" fit="scale-down" class="seulogo"></el-image>
-    </div>
+<h2>Contact Us</h2>
+
+Jinghui Zhang, Southeast University
+
+<br>
+<a href="mailto:jhzhang@seu.edu.cn">jhzhang@seu.edu.cn</a>
+<br>
+Di Wu, University of Southern Queensland
+<br>    
+<a href="mailto:Di.Wu@unisq.edu.au">Di.Wu@unisq.edu.au</a>
 </template>
 
 <script setup lang="ts">
@@ -83,8 +88,7 @@ import { useYearStore } from '@/stores/useYearStore';
 
 const yearStore = useYearStore();
 const cfpUrl = ref<string>('');
-const seuSrc = new URL('@/assets/images/seu.png', import.meta.url).href;
-const usqSrc = new URL('@/assets/images/usq.svg', import.meta.url).href;
+
 watchEffect(() => {
     if (yearStore.currentYear) {
         try {
@@ -135,11 +139,7 @@ li {
     height: 3em;
 }
 
-.logo-container {
-    display: flex;
-    align-items: left; 
-    height:10em;
-}
+
 
 /* .seulogo,
 .usqlogo {

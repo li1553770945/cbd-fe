@@ -1,7 +1,7 @@
 <template>
   <div class="block text-center">
-    <div style="position: relative; width: 100%; height: 45vh;">
-      <img :src="imageSrc" alt="Carousel image" style="object-fit: cover; width: 100%; height: 100%;">
+    <div style="position: relative; width: 100%; overflow: hidden;">
+      <el-image fit="cover" class="banner-image" :src="imageSrc" alt="Carousel image" />
       <!-- 文字容器 -->
       <div class="title-container">
         <h2 class="title">
@@ -57,7 +57,7 @@ watchEffect(async () => {
 <style scoped>
 .title-container {
   position: absolute;
-  bottom: 50%;
+  top: 10%;
   left: 0;
   width: 100%;
   /* background-color: rgba(0, 0, 0, 0.5); */
@@ -67,20 +67,26 @@ watchEffect(async () => {
 }
 
 .title {
-  font-size: 29px;
+  font-size: 50px;
   /* 大号字体 */
   margin-bottom: 10px;
+  line-height: 50px;
   /* 添加间距 */
-  font-weight: 700;
+  font-weight: 900;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* 添加黑色的阴影，增加可读性 */
+  
 }
 
 .sub-title {
-  font-size: 24px;
+  font-size: 30px;
   /* 较小字体 */
   /* color: #ccc; */
   /* 浅色文字 */
-  font-weight: 600;
+  font-weight: 700;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* 添加黑色的阴影，增加可读性 */
+}
+.banner-image {
+  width: 100%;
+  height: 70%; 
 }
 </style>

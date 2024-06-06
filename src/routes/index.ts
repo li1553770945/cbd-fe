@@ -11,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
     {
       path: '/:year/home',
       name: 'home',
-      component: () => import('@/pages/Home.vue'),
+      component: () => import('@/pages/DynamicHome.vue'),
     },
     {
       path: '/:year/call-for-papers',

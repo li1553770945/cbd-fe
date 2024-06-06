@@ -18,8 +18,7 @@
         <News />
 
         <ImportantDays />
-        
-        <Contact/>
+
       </el-aside>
     </el-container>
     <el-footer class="footer">
@@ -33,7 +32,6 @@ import { computed, onMounted } from 'vue';
 import Head from './components/Head.vue';
 import ImportantDays from './components/ImportantDays.vue';
 import News from './components/News.vue';
-import Contact from './components/Contact.vue';
 import Banner from './components/Banner.vue';
 import { useYearStore } from '@/stores/useYearStore';
 const yearStore = useYearStore();
