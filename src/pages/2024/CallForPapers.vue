@@ -1,7 +1,6 @@
 <template>
 
     <h2> Paper Submission </h2>
-
     Submitted manuscripts must be formatted in <a
         href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html" target="_blank">standard
         IEEE US Letter Format</a> and must be submitted via <a href="https://easychair.org/conferences/?conf=cbd2024"
@@ -80,12 +79,14 @@ Jinghui Zhang, Southeast University
 Di Wu, University of Southern Queensland
 <br>    
 <a href="mailto:Di.Wu@unisq.edu.au">Di.Wu@unisq.edu.au</a>
+
+<Logos/>
 </template>
 
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue';
 import { useYearStore } from '@/stores/useYearStore';
-
+import Logos from '@/components/Logos.vue';
 const yearStore = useYearStore();
 const cfpUrl = ref<string>('');
 
@@ -105,6 +106,8 @@ const downloadCFP = () => {
     // 创建一个隐藏的 A 元素用于下载
     window.open(cfpUrl.value);
 }
+
+
 </script>
 <style scoped>
 h2 {
@@ -138,13 +141,6 @@ li {
     width: 40%;
     height: 3em;
 }
-
-
-
-/* .seulogo,
-.usqlogo {
-    height:10em;
-} */
 
 
 

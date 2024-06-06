@@ -8,12 +8,13 @@
             </li>
         </ul>
     </div>
+    <Logos/>
 </template>
 
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue';
 import { useYearStore } from '../stores/useYearStore';
-
+import Logos from '@/components/Logos.vue';
 const yearStore = useYearStore();
 
 interface IPerson {
@@ -38,6 +39,8 @@ watchEffect(async () => {
         }
     }
 });
+
+
 </script>
 
 <style scoped>
@@ -50,4 +53,6 @@ h2 {
     border: 1px solid #005f98;
     border-radius: 10px;
 }
+
+
 </style>
