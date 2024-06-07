@@ -7,10 +7,8 @@
     <Banner v-show="routeName == 'home'" />
     <el-container>
       <el-main class="main-container">
-        <router-view v-slot="{ Component }">
-          <transition name="fade">
-            <component :is="Component" />
-          </transition>
+        <router-view >
+         
         </router-view>
       </el-main>
       <el-aside class="aside-container">

@@ -40,7 +40,7 @@ const menuItems: MenuItem[] = [
     },
     {
         path: '',
-        name: 'Committees',
+        name: 'Committee',
         children: [
             {
                 name: 'Organizing Committee',
