@@ -78,9 +78,9 @@
                 "country": "Australia"
             },
             {
-                "name":"Huaming Chen",
-                "affiliation":"University of Sydney",
-                "country" :"Australia"
+                "name": "Huaming Chen",
+                "affiliation": "University of Sydney",
+                "country": "Australia"
             }
         ]
     },
@@ -109,6 +109,11 @@
             },
             {
                 "name": "Runqun Xiong",
+                "affiliation": "Southeast University",
+                "country": "China"
+            },
+            {
+                "name": "Ding Ding",
                 "affiliation": "Southeast University",
                 "country": "China"
             }
