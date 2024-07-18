@@ -1,13 +1,21 @@
 <template>
     <div class="important-days">
-        <h2 class="important-days">Important Dates</h2>
-        <ul>
-        <li v-for="day in importantDays" :key="day.date">
-            <span class="date">{{ day.date }}: </span>
-            <span class="">{{ day.name }}</span>
-        </li>
-        </ul>
-    </div>
+    <h2>Important Dates</h2>
+    <table>
+       
+        <tr v-for="day in importantDays" :key="day.date">
+            <td class="date-td">
+                <span class="date" v-if="day['older-date']">
+                    <s>{{ day['older-date'] }}</s> <br>
+                    <span class="new-date"> ➔{{ day.date }}</span>
+                </span>
+                <span class="date" v-if="!day['older-date']"> {{ day.date }}</span>
+            </td>
+            <td class="name-td">{{ day.name }}</td>
+        </tr>
+    </table>
+</div>
+
 </template>
 
 <script setup lang="ts">
@@ -17,6 +25,7 @@ const yearStore = useYearStore();
 interface IImportantDay {
     date: string;
     name: string;
+    'older-date'?: string;
 }
 const importantDays = ref<IImportantDay[]>([]);
 watchEffect(async () => {
@@ -30,12 +39,33 @@ watchEffect(async () => {
     }
 });
 </script>
+
 <style scoped>
-h2{
+h2 {
     color: #005f98;
 }
-.date{
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.date {
     color: #005f98;
     font-weight: bold;
+}
+.date-td{
+    width: 50%;
+}
+s {
+    color: #005f98;
+}
+.new-date {
+    color: #ff6347; 
 }
 </style>

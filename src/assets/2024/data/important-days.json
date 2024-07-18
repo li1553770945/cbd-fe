@@ -1,10 +1,12 @@
 [
     {
-        "date": "July 15, 2024",
+        "older-date": "July 15, 2024",
+        "date": "Aug 5, 2024",
         "name": "Paper submission deadline"
     },
     {
-        "date": "Aug 15, 2024",
+        "older-date": "Aug 15, 2024",
+        "date": "Aug 25, 2024",
         "name": "Notification of acceptance"
     },
     {
