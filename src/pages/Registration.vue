@@ -54,7 +54,7 @@
             details.
         </li>
         <li>
-            Make your payment following the instructions on the web page and quote the participants name and paper ID you are registering in the transaction note for identification.
+            Make your payment following the instructions on the web page and quote the participant's name and paper ID you are registering in the transaction note for identification.
         </li>
         <li>
             Send a confirmation email to:
