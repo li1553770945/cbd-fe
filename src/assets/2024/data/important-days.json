@@ -10,11 +10,13 @@
         "name": "Notification of acceptance"
     },
     {
-        "date": "Sep 10, 2024",
+        "older-date": "Sep 10, 2024",
+        "date": "TBD",
         "name": "Camera ready due"
     },
     {
-        "date": "Sep 10, 2024",
+        "older-date": "Sep 10, 2024",
+        "date": "Sep 30, 2024",
         "name": "Registration due"
     }
 ]

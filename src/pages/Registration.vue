@@ -3,8 +3,8 @@
     <table border="1" cellpadding="10">
         <tr>
             <th></th>
-            <th>Registration fee (early bird by 30 Sep)</th>
-            <th>Registration fee (after 30 Sep)</th>
+            <th>Registration fee<br>(early bird by 30 Sep)</th>
+            <th>Registration fee<br>(after 30 Sep)</th>
         </tr>
         <tr>
             <td>Author registration</td>
