@@ -33,7 +33,7 @@
         </tr>
     </table>
     <h2>Registration Policy</h2>
-    AT LEAST ONE author registration for each accepted paper should be made in time for inclusion of the paper in the
+    AT LEAST ONE Author registration for each accepted paper should be made in time for inclusion of the paper in the
     IEEE proceedings.
     <h2>Registration Steps</h2>
 
