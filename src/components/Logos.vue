@@ -6,7 +6,6 @@
     </div>
     <h2>Sponsored By</h2>
     <div class="logo-container">
-        <el-image :src="tciiSrc" fit="scale-down" class="sponsor-logo"></el-image>
         <el-image :src="jcsSrc" fit="scale-down" class="sponsor-logo"></el-image>
         <el-image :src="acmSrc" fit="scale-down" class="sponsor-logo"></el-image>
         <el-image :src="thuSrc" fit="scale-down" class="sponsor-logo"></el-image>
@@ -17,7 +16,6 @@
 <script setup lang="ts">
 const seuSrc = new URL('@/assets/images/seu.png', import.meta.url).href;
 const usqSrc = new URL('@/assets/images/usq.svg', import.meta.url).href;
-const tciiSrc = new URL('@/assets/images/tcii.png', import.meta.url).href;
 const jcsSrc = new URL('@/assets/images/jcs.png', import.meta.url).href;
 const acmSrc = new URL('@/assets/images/acm.png', import.meta.url).href;
 const thuSrc = new URL('@/assets/images/thu.png', import.meta.url).href;

@@ -33,19 +33,24 @@
                 "country": "Australia"
             },
             {
+                "name": "Xin Wang",
+                "affiliation": "University of Calgary",
+                "country": "Canada"
+            },
+            {
                 "name": "Jun Shen",
                 "affiliation": "University of Wollongong",
                 "country": "Australia"
             },
             {
+                "name": "Jianwei Zhang",
+                "affiliation": "Iwate University",
+                "country": "Japan"
+            },
+            {
                 "name": "Jinghui Zhang",
                 "affiliation": "Southeast University",
                 "country": "China"
-            },
-            {
-                "name": "Xiaohui Tao",
-                "affiliation": "University of Southern Queensland",
-                "country": "Australia"
             }
         ]
     },

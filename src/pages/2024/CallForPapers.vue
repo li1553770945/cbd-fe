@@ -16,7 +16,7 @@
 
     All submitted papers will be reviewed by program committee members and selected based on their originality,
     significance, relevance, and clarity of presentation. Accepted papers will be all published by Conference Publishing
-    Services (CPS) and will be submitted for indexing to EI (Compendex). Authors of selected papers will be invited to submit revised and expanded version of their papers to be considered for publication in confirmed special issues or fast track of well-known international journals such as World Wide Web Journal(SCI), Tsinghua Science and Technology(SCI), Concurrency and Computation: Practice and Experience(SCI), Big Data Mining and Analytics(IEEE), Communications of the Association for Information Systems, Internet of Things and Cyber-Physical Systems, Web Intelligence etc.
+    Services (pending approval) and will be submitted for indexing to EI (Compendex). Authors of selected papers will be invited to submit revised and expanded version of their papers to be considered for publication in confirmed special issues or fast track of well-known international journals such as World Wide Web Journal(SCI), Tsinghua Science and Technology(SCI), Concurrency and Computation: Practice and Experience(SCI), Big Data Mining and Analytics(IEEE), Communications of the Association for Information Systems, Internet of Things and Cyber-Physical Systems, Web Intelligence etc.
 
     <h2>Scope of Conference</h2>
     <p>The International Conference on Advanced Cloud and Big Data (CBD) provides a forum for both academics and
