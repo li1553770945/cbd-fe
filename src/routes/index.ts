@@ -46,7 +46,7 @@ const routes: Array<RouteRecordRaw> = [
     {
       path: '/:year/registration',
       name: 'registration',
-      component: () => import('@/pages/Registration.vue'),
+      component: () => import('@/pages/DynamicRegistration.vue'),
     },
     {
       path: '/:year/venue-hotel',
