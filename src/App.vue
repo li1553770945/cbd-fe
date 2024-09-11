@@ -2,7 +2,7 @@
   <el-container class="app-container">
     <el-header class="header-container">
 
-      <Head />
+      <Head></Head>
     </el-header>
     <Banner v-show="routeName == 'home'" />
     <el-container>

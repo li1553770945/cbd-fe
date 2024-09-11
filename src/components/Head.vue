@@ -1,21 +1,4 @@
 <template>
-    <!-- <el-row class="head">
-        
-        <el-col :span="4"></el-col>
-        <el-col :span="12">
-            <el-row class="title">
-                {{ headData?.title }}
-
-            </el-row>
-            <el-row class="subtitle">
-                {{ headData?.subtitle }}
-            </el-row>
-        </el-col>
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple-light" />
-        </el-col>
-    
-    </el-row> -->
     <el-row class="menu-row">
         <Menu class="menu"></Menu>
     </el-row>
