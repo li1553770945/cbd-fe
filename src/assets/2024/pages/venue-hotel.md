@@ -1,6 +1,17 @@
-## Conference Address
-**Brisbane Square Library**  
-266 George St, Brisbane, QLD 4000  
+## Venue
+
+### <span style="color:#3594CF">Address</span>
+
+Brisbane Square Library
+
+266 George St, Brisbane, QLD 4000
+
+
+### <span style="color:#3594CF">Contact</span>
+
+Jianming Yong, +61 7 3470 4827
+
+[Jianming.Yong@unisq.edu.au](mailto:Jianming.Yong@unisq.edu.au)
 
 ## Suggested Booking Websites
 - <a href="https://www.booking.com" target="_blank">Booking.com</a>
