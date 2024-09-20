@@ -13,7 +13,7 @@
       </el-main>
       <el-aside class="aside-container">
 
-        <News />
+        <!-- <News /> -->
 
         <ImportantDays />
 
@@ -29,7 +29,7 @@
 import { computed, onMounted } from 'vue';
 import Head from './components/Head.vue';
 import ImportantDays from './components/ImportantDays.vue';
-import News from './components/News.vue';
+//import News from './components/News.vue';
 import Banner from './components/Banner.vue';
 import { useYearStore } from '@/stores/useYearStore';
 const yearStore = useYearStore();
