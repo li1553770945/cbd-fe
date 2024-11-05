@@ -1,26 +1,29 @@
 [
-    {
-        "title": "To be advised",
-        "author": "Prof. Xiaohua Jia",
-        "image": "keynote1.jpg",
-        "affiliation": "City University of Hong Kong",
-        "country": "Hong Kong SAR",
-        "biography": "Xiaohua Jia received his BSc (1984) and MEng (1987) from University of Science and Technology of China, and DSc (1991) in Information Science from University of Tokyo. He is currently Chair Professor with Dept of Computer Science at City University of Hong Kong. His research interests include cloud computing and distributed systems, data security and privacy, computer networks and mobile computing. Prof. Jia is an editor of IEEE Trans. on Computers (2021 – present), IEEE Internet of Things (2013-2018), IEEE Trans. on Parallel and Distributed Systems (2006-2009), Journal of World Wide Web, Journal of Combinatorial Optimization, etc. He is the General Chair of ACM MobiHoc 2008, TPC Co-Chair of IEEE GlobeCom 2010 – Ad Hoc and Sensor Networking Symp, Area-Chair of IEEE INFOCOM 2015-2017, Track-Chair of IEEE ICDCS 2019, and General Chair of ACM ICN 2019. He is a Fellow of IEEE (Computer Society) and Distinguished Member of ACM."
-    },
-    {
-        "title": " Towards Autonomous, Precision, and Sustainable Farming",
-        "author": "Jie Liu",
-        "image": "keynote2.jpg",
-        "affiliation": "National Key Lab on Smart Farming Technologies and Systems, China",
-        "country": "China",
-        "biography": "Jie Liu is the Director of National Key Lab on Smart Farming Technologies and Systems in China. He worked at Xerox PARC and Microsoft from 2001 to 2019. He was a Principal Research Manager at Microsoft Research and a partner of the company. His research interests are AI for IoT, mobile and embedded systems, and energy efficient computing. He was the Steering Committee Chair for CPS-IoT Week, IPSN, and SenSys. He received IEEE TCCPS Distinguished Leadership Award and 7 Best Paper Awards from top conferences. He is an IEEE Fellow and an ACM Distinguished Scientist."
-    },
-    {
-        "title": "To be advised",
-        "author": "Prof. Willy Susilo",
-        "image": "keynote3.jpg",
-        "affiliation": "University of Wollongong",
-        "country": "Australia",
-        "biography": "Willy Susilo is a Distinguished Professor and Australian Laureate Fellow at the School of Computing and Information Technology, University of Wollongong (UOW). He is a Fellow of several academies: IEEE, IET (Institution of Engineering and Technology) Fellow, ACS (Australian Computer Society), AAIA and AIIA. He is the director of Institute of Cybersecurity and Cryptology (iC2), School of Computing and Information Technology, UOW. Willy is an innovative educator and researcher. Currently, he is the Head of School of Computing and Information Technology at UOW (2015 - now). Prior to this role, he was awarded the prestigious Australian Research Council Future Fellowship in 2009. He was the former Head of School of Computer Science and Software Engineering (2009 - 2010) and the Deputy Director of ICT Research Institute at UOW (2006 - 2008). Willy obtained his PhD from the University of Wollongong in 2001. He has published more than 500 research papers in journals and conference proceedings in cryptography and network security."
-    }
+  {
+    "title": "To be advised",
+    "author": "Prof. Xiaohua Jia",
+    "image": "keynote1.jpg",
+    "affiliation": "City University of Hong Kong",
+    "country": "Hong Kong SAR",
+    "abstract":"",
+    "biography": "Xiaohua Jia received his BSc (1984) and MEng (1987) from University of Science and Technology of China, and DSc (1991) in Information Science from University of Tokyo. He is currently Chair Professor with Dept of Computer Science at City University of Hong Kong. His research interests include cloud computing and distributed systems, data security and privacy, computer networks and mobile computing. Prof. Jia is an editor of IEEE Trans. on Computers (2021 – present), IEEE Internet of Things (2013-2018), IEEE Trans. on Parallel and Distributed Systems (2006-2009), Journal of World Wide Web, Journal of Combinatorial Optimization, etc. He is the General Chair of ACM MobiHoc 2008, TPC Co-Chair of IEEE GlobeCom 2010 – Ad Hoc and Sensor Networking Symp, Area-Chair of IEEE INFOCOM 2015-2017, Track-Chair of IEEE ICDCS 2019, and General Chair of ACM ICN 2019. He is a Fellow of IEEE (Computer Society) and Distinguished Member of ACM."
+  },
+  {
+    "title": " Towards Autonomous, Precision, and Sustainable Farming",
+    "author": "Jie Liu",
+    "image": "keynote2.jpg",
+    "affiliation": "National Key Lab on Smart Farming Technologies and Systems, China",
+    "country": "China",
+    "abstract":"Farming and food security are the foundations human servival and society stability. In this talk,  we discuss how artificial intelligence and IoT can help improve farm productivity and efficiency. Using information from remote sensing, weather forecasting and ground sensors, combined with advanced algorithms, we aim at making intelligent decisions based on real-time data as well as human expertise. We also designed unmanned farm vehicles to reduce farming labor intensity and to improve operation precision. We will discuss challenges and future roads towards industrializing this old form of economy. ",
+    "biography": "Jie Liu is the Director of National Key Lab on Smart Farming Technologies and Systems in China. He worked at Xerox PARC and Microsoft from 2001 to 2019. He was a Principal Research Manager at Microsoft Research and a partner of the company. His research interests are AI for IoT, mobile and embedded systems, and energy efficient computing. He was the Steering Committee Chair for CPS-IoT Week, IPSN, and SenSys. He received IEEE TCCPS Distinguished Leadership Award and 7 Best Paper Awards from top conferences. He is an IEEE Fellow and an ACM Distinguished Scientist."
+  },
+  {
+    "title": "Cloud Computing Security: Past, Present and Future",
+    "author": "Prof. Willy Susilo",
+    "image": "keynote3.jpg",
+    "affiliation": "University of Wollongong",
+    "country": "Australia",
+    "abstract": "Cloud computing is considered as one of the most prominent paradigms in the information technology industry, since it can significantly reduce the costs of hardware and software resources in computing infrastructure. This convenience has enabled corporations to efficiently use cloud storage as a mechanism to share data and cloud computing as a mechanism to outsource computing. One of the most important works in the area of cloud computing is how to provide security protections. The work in the cryptography literature has been very rich in this area, as it has been studied in the past two decades. In this lecture, we will revisit the topics that researchers have been studying. Specifically, we will provide an overview on what research topic that was studied, and currently being studied in the literature. We provide a comprehensive understanding of cloud computing research based on the published papers spanning from 2007 to 2023. Furthermore, we also discuss the gap between theory and the implementation of the proposed solutions.",
+    "biography": "Willy Susilo is a Distinguished Professor at the School of Computing and Information Technology, Faculty of Engineering and Information Sciences at the University of Wollongong (UOW), Australia.He holds the most prestigious Australian Laureate Fellowship awarded by the Australian Research Council. He is the director of Institute of Cybersecurity and Cryptology, School of Computing and Information Technology, UOW. Recently, he was awarded the 2024 NSW Premier's Prizes for Science and Engineering due to his research work. He is an IEEE Fellow, an IET Fellow, an ACS Fellow, an AAIA Fellow and an AIIA Fellow. Previously, he was awarded the prestigious Australian Research Council Future Fellowship in 2009. He has published more than 500 papers in journals and conference proceedings in cryptography and network security.  In 2016, he was awarded the \"Researcher of the Year\" at UOW, due to his research excellence."
+  }
 ]

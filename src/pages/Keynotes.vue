@@ -7,8 +7,11 @@
             <h3 class="author">{{ keynote.author }}</h3>
             <h3 class="afflication">{{ keynote.affiliation }}</h3>
         </div>
+        <h3 v-if = "keynote.abstract!=''"class="abstract-title">Abstract</h3>
+        <p v-if = "keynote.abstract!=''" > {{ keynote.abstract }}</p>
         <h3 class="biography-title">Biography</h3>
         <p> {{ keynote.biography }}</p>
+      
     </div>
 </template>
 
@@ -25,6 +28,7 @@ interface IKeynote {
     image: string;
     affiliation: string;
     country: string;
+    abstract: string;
     biography: string;
 }
 
@@ -82,6 +86,9 @@ const toRoman = (num: number): string => {
     color: #005f98;
 }
 .biography-title{
+    color: #3594CF;
+}
+.abstract-title{
     color: #3594CF;
 }
 .image-container {
