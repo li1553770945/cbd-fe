@@ -1,13 +1,13 @@
 [
   {
-    "title": "To be advised",
+    "title": "Secure, Incentivized and Unlearning-enabled Data Sharing for Machine Learning",
     "author": "Prof. Xiaohua Jia",
     "image": "keynote1.jpg",
     "affiliation": "City University of Hong Kong",
     "country": "Hong Kong SAR",
-    "abstract":"",
-    "biography": "Xiaohua Jia received his BSc (1984) and MEng (1987) from University of Science and Technology of China, and DSc (1991) in Information Science from University of Tokyo. He is currently Chair Professor with Dept of Computer Science at City University of Hong Kong. His research interests include cloud computing and distributed systems, data security and privacy, computer networks and mobile computing. Prof. Jia is an editor of IEEE Trans. on Computers (2021 – present), IEEE Internet of Things (2013-2018), IEEE Trans. on Parallel and Distributed Systems (2006-2009), Journal of World Wide Web, Journal of Combinatorial Optimization, etc. He is the General Chair of ACM MobiHoc 2008, TPC Co-Chair of IEEE GlobeCom 2010 – Ad Hoc and Sensor Networking Symp, Area-Chair of IEEE INFOCOM 2015-2017, Track-Chair of IEEE ICDCS 2019, and General Chair of ACM ICN 2019. He is a Fellow of IEEE (Computer Society) and Distinguished Member of ACM."
-  },
+    "abstract":"Machine Learning (ML) models and AI systems heavily rely on the training over large scale of data and the data from different domains. It is critically important to encourage data owners to share their data out for the training of AI systems. However, data are often fragmented, as they are collected by different institutions and managed locally. It is difficult to share data across multiple institutions. In this talk, we will address the three key challenging issues that hinder the data sharing for the training of ML models: 1) lack of secure platform that data owners can authorize their data to specific users for specific applications, so that the data can only be utilized for the authorized purpose and nothing else; 2) lack of contribution-based data valuation scheme and incentives for data sharing. Data owners do not receive their deserved share of the profit generated from their data; 3) lack of unlearning scheme that allows data owners to withdraw their data from a trained-model. We will also present our solutions to these issues.",
+    "biography": "Xiaohua Jia received his BSc (1984) and MEng (1987) from University of Science and Technology of China, and DSc (1991) in Information Science from University of Tokyo. He is currently a Chair Professor with Dept of Computer Science at City University of Hong Kong. His research interests include cloud computing and distributed systems, data security and privacy, computer networks and mobile computing. Prof. Jia is an editor of IEEE Trans. on Computers (2021 – present), IEEE Internet of Things (2013-2018), IEEE Trans. on Parallel and Distributed Systems (2006-2009), etc. He is the Chair of IEEE ICDCS 2023, ACM ICN 2019, and ACM MobiHoc 2008, TPC Chair of IEEE GlobeCom 2010, and Area-Chair of IEEE INFOCOM 2015-2017. He is the recipient of IEEE TCDP Outstanding Service and Contributions Award 2024 and Hong Kong RGC Senior Research Fellow Award 2024. He is a Fellow of IEEE (Computer Society) and Distinguished Member of ACM."
+   },
   {
     "title": " Towards Autonomous, Precision, and Sustainable Farming",
     "author": "Jie Liu",
