@@ -61,8 +61,8 @@ const menuItems: MenuItem[] = [
                 'path': 'keynotes'
             },
             {
-                'name': 'Program at a Glance',
-                'path': 'program-at-a-glance'
+                'name': 'Final Program',
+                'path': 'final-program'
             },
         ]
     },

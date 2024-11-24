@@ -39,9 +39,9 @@ const routes: Array<RouteRecordRaw> = [
       component: () => import('@/pages/Keynotes.vue'),
     },
     {
-      path: '/:year/program-at-a-glance',
-      name: 'programAtAGlance',
-      component: () => import('@/pages/ProgramAtAGlance.vue'),
+      path: '/:year/final-program',
+      name: 'final-program',
+      component: () => import('@/pages/DynamicFinalProgram.vue'),
     },
     {
       path: '/:year/registration',
